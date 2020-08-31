@@ -18,16 +18,17 @@
             <p class="subtitle">现在下载 SNS Max 体验程序试试吧</p>
 
             <div class="download">
-                <a href="#" class="download-button">
+                <a href="https://testflight.apple.com/join/wkahVf0E" class="download-button">
                     <img class="button-icon" src="../assets/ios.svg">
                     <div class="button-text">
                         Download app for
                         <span>iOS</span>
                     </div>
                 </a>
-                <a href="#" class="download-button">
+                <a href="#" class="download-button" @click="downloadAndroid">
                     <img class="button-icon android-icon" src="../assets/android.svg">
-                    <div class="button-text">
+                    <div class="button-text" v-if="download == 1">正在获取下载地址...</div>
+                    <div class="button-text" v-else>
                         Download app for
                         <span>Android</span>
                     </div>
@@ -51,6 +52,33 @@
     </div>
 
 </template>
+
+<script>
+export default {
+    data: () => ({
+        download: 0,
+    }),
+    methods: {
+        downloadAndroid() {
+            if (this.download == 1) {
+                return;
+            }
+            this.download = 1;
+            fetch('https://snsmax.bytegem.net/api2/android-version')
+                .then(response => response.json())
+                .then(result => result.data)
+                .then(result => result.apk)
+                .then(url => {
+                    this.download = 0;
+                    open(url);
+                }).catch(() => {
+                    alert('获取安装包失败');
+                    this.download = 0;
+                });
+        }
+    }
+}
+</script>
 
 <style scoped>
 .background {
