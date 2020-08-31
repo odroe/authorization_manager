@@ -5,7 +5,11 @@ import { useJMLinkMethodMixin } from './mixins/jml';
 
 import './base.css';
 
+// create app
 const app = createApp(App);
-app.mixin(useJMLinkMethodMixin);
+
 app.use(router)
-app.mount('#app');
+app.mixin(useJMLinkMethodMixin);
+
+// Route is ready run app.
+router.isReady().then(() => app.mount('#app'));

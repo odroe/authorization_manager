@@ -14,7 +14,7 @@ export default {
   components: { 
     Layout,
     Mobile
-   },
+  },
   computed: {
     clientWidget() {
       return document.body.clientWidth;
