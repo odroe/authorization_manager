@@ -3,8 +3,10 @@ module.exports = {
         removeDeprecatedGapUtilities: true,
     },
     theme: {
-        colors: {
-            primary: '#5E6CE7'
+        extend: {
+            colors: {
+                primary: '#5E6CE7'
+            }
         }
     }
 };
