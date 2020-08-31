@@ -10,17 +10,17 @@
                 <img src="../assets/logo.png" class="fill-current h-8 w-8 mr-2 rounded-full">
                 <span class="font-semibold text-xl tracking-tight">SNS Max</span>
             </div>
-            <div class="block lg:hidden">
+            <div class="block sm:hidden">
                 <button class="flex items-center px-3 py-2 border rounded lg:text-black text-white lg:border-black border-white lg:hover:text-gray-700 hover:border-gray-200" @click="menuHandler">
                     <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                 </button>
             </div>
-            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden">
+            <div class="w-full flex-grow sm:flex sm:items-center sm:w-auto hidden">
                 <div class="text-sm flex-grow flex justify-end">
-                    <a href="https://bytegem.org/" class="block mt-4 inline-block mt-0 text-black hover:text-gray-700 mr-4 font-bold">
+                    <a href="https://bytegem.org/" class="block inline-block mt-0 text-black hover:text-gray-700 mr-4 font-bold">
                         Byte Gem
                     </a>
-                    <a href="https://github.com/bytegem/fans" target="_blank" rel="noopener noreferrer" class="block mt-4 inline-block mt-0 text-black hover:text-gray-700 mr-4 font-bold">
+                    <a href="https://github.com/bytegem/fans" target="_blank" rel="noopener noreferrer" class="block inline-block mt-0 text-black hover:text-gray-700 mr-4 font-bold">
                         Fans Project
                     </a>
                 </div>
@@ -38,7 +38,7 @@
         </nav>
 
         <!-- 根容器 -->
-        <div class="flex flex-col lg:flex-row">
+        <div class="flex flex-col lg:flex-row lg:items-center">
             <div class="w-full">
                 <!-- 标题 -->
                 <h1 class="text-4xl text-white text-center px-6 lg:px-20">精致的思考，值得分享！看看身边有多少有趣的灵魂</h1>
