@@ -8,12 +8,14 @@
 </template>
 
 <script>
-import Layout from './components/Layout.vue';
-import Mobile from './components/MobileLayout.vue';
+import { defineAsyncComponent } from 'vue';
+const layout = defineAsyncComponent(() => import('./components/Layout.vue'));
+const mobile = defineAsyncComponent(() => import('./components/MobileLayout.vue'));
+
 export default {
   components: { 
-    Layout,
-    Mobile
+    layout,
+    mobile,
   },
   computed: {
     clientWidget() {
