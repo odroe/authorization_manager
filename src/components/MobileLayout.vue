@@ -1,10 +1,12 @@
 <template>
-    <div class="appbar">
+    <div>
+        <div class="appbar">
         <img class="logo" src="../assets/logo.png" alt="SNS Max">
         <div class="slogan">发现有趣的灵魂</div>
         <div class="openApp" ref="openApp">打开APP</div>
     </div>
     <slot />
+    </div>
 </template>
 
 <style scoped>
@@ -26,7 +28,6 @@
     width: 100%;
     color: #fff;
     padding: 0 12px;
-    font-size: 1.6rem;
     font-weight: 600;
 }
 .appbar .openApp {
@@ -35,7 +36,6 @@
     color: #5E6CE7;
     padding: 8px 16px;
     border-radius: 24px;
-    font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
