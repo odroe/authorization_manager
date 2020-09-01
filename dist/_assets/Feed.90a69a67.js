@@ -1,1 +1,0 @@
-let e=document.createElement("style");e.innerHTML="",document.head.appendChild(e);import{c as n,o as t}from"./index.557c6982.js";const d={render:function(e,d){return t(),n("div",null,"22222")},__file:"src/pages/Feed.vue"};export default d;
