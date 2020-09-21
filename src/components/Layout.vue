@@ -17,10 +17,10 @@
             </div>
             <div class="w-full flex-grow sm:flex sm:items-center sm:w-auto hidden">
                 <div class="text-sm flex-grow flex justify-end">
-                    <a href="https://bytegem.org/" class="block inline-block mt-0 text-black hover:text-gray-700 mr-4 font-bold">
+                    <a href="https://bytegem.net/" class="block inline-block mt-0 text-black hover:text-gray-700 mr-4 font-bold">
                         Byte Gem
                     </a>
-                    <a href="https://github.com/bytegem/fans" target="_blank" rel="noopener noreferrer" class="block inline-block mt-0 text-black hover:text-gray-700 mr-4 font-bold">
+                    <a href="https://bytegem.net/products/fans/" target="_blank" rel="noopener noreferrer" class="block inline-block mt-0 text-black hover:text-gray-700 mr-4 font-bold">
                         Fans Project
                     </a>
                 </div>
@@ -30,7 +30,7 @@
                     <a href="https://bytegem.org/" class="block mt-4  text-white hover:text-gray-200 mr-4 font-bold">
                         Byte Gem
                     </a>
-                    <a href="https://github.com/bytegem/fans" target="_blank" rel="noopener noreferrer" class="block mt-4 text-white hover:text-gray-200 mr-4 font-bold">
+                    <a href="https://bytegem.net/products/fans/" target="_blank" rel="noopener noreferrer" class="block mt-4 text-white hover:text-gray-200 mr-4 font-bold">
                         Fans Project
                     </a>
                 </div>
