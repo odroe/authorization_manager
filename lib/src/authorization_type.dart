@@ -1,0 +1,4 @@
+enum AuthorizationType {
+  access,
+  refresh,
+}
