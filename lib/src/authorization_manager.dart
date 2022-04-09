@@ -16,9 +16,7 @@ class AuthorizationManager {
     required this.writer,
     this.refresher,
     AuthorizationClear? clear,
-  }) : _clear = clear {
-    _createTimer(true);
-  }
+  }) : _clear = clear;
 
   final AuthorizationReader reader;
   final AuthorizationWriter writer;
@@ -29,6 +27,8 @@ class AuthorizationManager {
   FutureOr<Authorization?> getAccessToken() => reader(AuthorizationType.access);
   FutureOr<Authorization?> getRefreshToken() =>
       reader(AuthorizationType.refresh);
+
+  Future<void> init() => _createTimer(true);
 
   Future<void> store(Authorization authorization) async {
     await writer(authorization);
